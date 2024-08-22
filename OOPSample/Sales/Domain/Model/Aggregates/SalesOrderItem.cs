@@ -2,9 +2,9 @@ using System.Diagnostics.Contracts;
 
 namespace OOPSample.Sales.Domain.Model.Aggregates;
 
-public class SalesOrderItems
+public class SalesOrderItem
 {
-    public SalesOrderItems(Guid salesOrderId, int productId, int quantity, double unitPrice)
+    public SalesOrderItem(Guid salesOrderId, int productId, int quantity, double unitPrice)
     {
         if (salesOrderId == Guid.Empty)
         {
